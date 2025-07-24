@@ -1,0 +1,310 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   List sản phẩm
+  </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="CSS/styleproduct.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="Script/scriptproduct.js" defer></script>
+    <script src="Script/product_data_transfer.js" defer></script> </head>
+ <body>
+        <header class="header">
+    <div class="header-container">
+        <div class="top-bar">
+            <div class="jordan-logo"><img class="img-jordan-logo" src="images/logojordan.png"></div>
+            <div class="top-links">
+                <a href="#">Find a Store</a>
+                <span class="separator">|</span>
+                <a href="#">Help</a>
+                <span class="separator">|</span>
+                <a href="#">Join Us</a>
+                <span class="separator">|</span>
+                <a href="#">Sign In</a>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="nike-logo">
+                <a href="index.html"><img class="img-nike-logo" src="images/logo.png" alt="Nike Logo"></a>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="#">New & Featured</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Sale</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i>
+                    <input type="text" class="search-input" placeholder="Search">
+                </div>
+                <button class="icon-button">
+                    <i class="fa-regular fa-heart fa-lg" style="color: #000000;"></i>
+                </button>
+                <button class="icon-button">
+                    <i class="fa-solid fa-cart-plus fa-lg" style="color: #000000;"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="promo-banner">
+            <div class="promo-title">New Styles On Sale: Up To 40% Off</div>
+            <a href="#" class="promo-link">Shop All Our New Markdowns</a>
+        </div>
+    </div>
+    <div class="container_product" role="main">
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <span>Shoes</span>
+        <span>Jordan Editions</span>
+        <span>Jordan 1</span>
+    </nav>
+   <div class="header-row">
+        <h1>Jordan 1 Shoes(101)</h1>
+        <div aria-label="Page actions" class="actions">
+            <div aria-controls="filters-list" aria-expanded="false" role="button" tabindex="0">
+                Hide Filters
+                <svg aria-hidden="true" focusable="false" viewbox="0 0 320 512">
+                    <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0L160 284.1 256.4 187c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L177 352.3c-9.4 9.4-24.6 9.4-34 0z"></path>
+                </svg>
+             </div>
+            <div aria-controls="sort-list" aria-expanded="false" role="button" tabindex="0">
+                Sort By
+                <svg aria-hidden="true" focusable="false" viewbox="0 0 320 512">
+                    <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0L160 284.1 256.4 187c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L177 352.3c-9.4 9.4-24.6 9.4-34 0z"></path>
+                </svg>
+            </div>
+        </div>
+   </div>
+    <div class="main-content">
+        <aside aria-label="Filters" class="sidebar" tabindex="0">
+            <div aria-labelledby="top-filter" class="filter-group">
+                <div class="filter-title" id="top-filter">
+                    Top
+                </div>
+                <ul>
+                    <li><span>Low Top</span></li>
+                    <li>Mid Top</li>
+                    <li>High Top</li>
+                </ul>
+            </div>
+            <div class="divider" role="separator"></div>
+                <div aria-labelledby="gender-filter" class="filter-group">
+                    <div class="filter-title" id="gender-filter">
+                        Gender
+                    </div>
+                    <ul>
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Kids</li>
+                    </ul>
+                </div>
+                <div aria-labelledby="kids-filter" class="filter-group">
+                     <div class="filter-title" id="kids-filter">
+                        Kids
+                    </div>
+                    <ul>
+                        <li>Boys</li>
+                        <li>Girls</li>
+                        <li>Toddlers</li>
+                    </ul>
+                </div>
+                <div aria-labelledby="sale-filter" class="filter-group">
+                    <div class="filter-title" id="sale-filter">
+                        Sale & Offers
+                    </div>
+                    <ul>
+                        <li>On Sale</li>
+                        <li>Discounts</li>
+                        <li>Clearance</li>
+                    </ul>
+                </div>
+                <div aria-labelledby="colour-filter" class="filter-group">
+                    <div class="filter-title" id="colour-filter">
+                        Colour
+                    </div>
+                    <ul>
+                        <li>Black</li>
+                        <li>White</li>
+                        <li>Red</li>
+                    </ul>
+                </div>
+                <div aria-labelledby="shoes-filter" class="filter-group">
+                    <div class="filter-title" id="shoes-filter">
+                        Shoes Height
+                    </div>
+                    <ul>
+                        <li>Low</li>
+                        <li>Mid</li>
+                        <li>High</li>
+                    </ul>
+                </div>
+                <div aria-labelledby="brand-filter" class="filter-group">
+                    <div class="filter-title" id="brand-filter">
+                        Brand
+                    </div>
+                    <ul>
+                        <li>Jordan</li>
+                        <li>Nike</li>
+                        <li>Adidas</li>
+                    </ul>
+                </div>
+                <div aria-labelledby="collections-filter" class="filter-group">
+                    <div class="filter-title" id="collections-filter">
+                        Collections
+                    </div>
+                    <ul>
+                        <li>Retro</li>
+                        <li>Modern</li>
+                        <li>Limited Edition</li>
+                    </ul>
+                </div>
+        </aside>
+    <section aria-label="Product list" class="products">
+     <article class="product-card" tabindex="0" data-product-id="1" data-product-name="Air Jordan 1 Low" data-product-subtitle="Men's Shoes" data-product-color="1 Colour" data-product-price="3,239,000₫" data-product-images='["images/detail1.1.png", "images/detail1.2.png", "images/detail1.3.png", "images/detail1.4.png", "images/detail1.5.png", "images/detail1.6.png", "images/detail1.7.png", "images/detail1.8.png"]'>
+      <a href="detail.html"><img alt="Air Jordan 1 Low" height="240" src="images/prd1.png" width="240"/></a>
+      <div class="product-info">
+       <h2 class="product-name">Air Jordan 1 Low</h2>
+       <p class="bestseller">Bestseller</p>
+       <p class="product-subtitle">Men's Shoes</p>
+       <p class="product-color">1 Colour</p>
+       <p class="product-price">3,239,000₫</p>
+      </div>
+     </article>
+     <article class="product-card" tabindex="0" data-product-id="2" data-product-name="Air Jordan 1 Low" data-product-subtitle="Men's Shoes" data-product-color="1 Colour" data-product-price="3,239,000₫" data-product-images='["images/detail2.1.png", "images/detail2.2.png", "images/detail2.3.png", "images/detail2.4.png", "images/detail2.5.png", "images/detail2.6.png", "images/detail2.7.png", "images/detail2.8.png"]'>
+      <a href="detail.html"><img alt="Air Jordan 1 Low" height="240" src="images/prd2.png" width="240"/></a>
+      <div class="product-info">
+       <h2 class="product-name">Air Jordan 1 Low</h2>
+       <p class="product-subtitle">Men's Shoes</p>
+       <p class="product-color">1 Colour</p>
+       <p class="product-price">3,239,000₫</p>
+      </div>
+     </article>
+     <article class="product-card" tabindex="0" data-product-id="3" data-product-name="Air Jordan 1 Low" data-product-subtitle="Men's Shoes" data-product-color="1 Colour" data-product-price-old="2,999,000₫" data-product-images='["images/detail3.1.png", "images/detail3.2.png", "images/detail3.3.png", "images/detail3.4.png", "images/detail3.5.png", "images/detail3.6.png", "images/detail3.7.png", "images/detail3.8.png"]'>
+      <a href="detail.html"><img alt="Air Jordan 1 Low sneaker" height="240" src="images/prd3.png" width="240"/></a>
+      <div class="product-info">
+       <h2 class="product-name">Air Jordan 1 Low</h2>
+       <p class="just-in">Just In</p>
+       <p class="product-subtitle">Men's Shoes</p>
+       <p class="product-color">1 Colour</p>
+       <p class="product-price"><del>2,999,000₫</del> <span>2,591,199₫ 20% off</span></p>
+      </div>
+     </article>
+     <article class="product-card" tabindex="0" data-product-id="4" data-product-name="Air Jordan 1 Low" data-product-subtitle="Men's Shoes" data-product-color="1 Colour" data-product-price-old="2,999,000₫" data-product-price="2,591,199₫" data-product-discount="20% off" data-product-images='["images/detail4.1.png", "images/detail4.2.png", "images/detail4.3.png", "images/detail4.4.png", "images/detail4.5.png", "images/detail4.6.png", "images/detail4.7.png", "images/detail4.8.png"]'>
+      <a href="detail.html"><img alt="Air Jordan 1 Low sneaker" height="240" src="images/prd4.png" width="240"/></a>
+      <div class="product-info">
+       <h2 class="product-name">Air Jordan 1 Low</h2>
+       <p class="just-in">Just In</p>
+       <p class="product-subtitle">Men's Shoes</p>
+       <p class="product-color">1 Colour</p>
+       <p class="product-price"><del>2,999,000₫</del> <span>2,591,199₫ 20% off</span></p>
+      </div>
+     </article>
+     <article class="product-card" tabindex="0" data-product-id="5" data-product-name="Air Jordan 1 Low G" data-product-subtitle="Golf Shoes" data-product-color="1 Colour" data-product-price-old="4,109,000₫" data-product-price="2,591,199₫" data-product-discount="20% off" data-product-images='["images/detail5.1.png", "images/detail5.2.png", "images/detail5.3.png", "images/detail5.4.png", "images/detail5.5.png", "images/detail5.6.png", "images/detail5.7.png", "images/detail5.8.png"]'>
+      <a href="detail.html"><img alt="Air Jordan 1 Low G" height="240" src="images/prd5.png" width="240"/></a>
+      <div class="product-info">
+       <h2 class="product-name">Air Jordan 1 Low G</h2>
+       <p class="just-in">Just In</p>
+       <p class="product-subtitle">Golf Shoes</p>
+       <p class="product-color">1 Colour</p>
+       <p class="product-price"><del>4,109,000₫</del> <span>2,591,199₫ 20% off</span></p>
+      </div>
+     </article>
+     <article class="product-card" tabindex="0" data-product-id="6" data-product-name="Air Jordan 1 Low" data-product-subtitle="Women's Shoes" data-product-color="1 Colour" data-product-price="3,239,000₫" data-product-images='["images/detail6.1.png", "images/detail6.2.png", "images/detail6.3.png", "images/detail6.4.png", "images/detail6.5.png", "images/detail6.6.png", "images/detail6.7.png", "images/detail6.8.png"]'>
+      <a href="detail.html"><img alt="Air Jordan 1 Low sneaker" height="240" src="images/prd6.png" width="240"/></a>
+      <div class="product-info">
+       <h2 class="product-name">Air Jordan 1 Low</h2>
+       <p class="just-in">Just In</p>
+       <p class="product-subtitle">Women's Shoes</p>
+       <p class="product-color">1 Colour</p>
+       <p class="product-price">3,239,000₫</p>
+      </div>
+     </article>
+     <article class="product-card" tabindex="0" data-product-id="7" data-product-name="Air Jordan 1 Low" data-product-subtitle="Men's Shoes" data-product-color="1 Colour" data-product-price="2,591,000₫" data-product-images='["images/detail7.1.png", "images/detail7.2.png", "images/detail7.3.png", "images/detail7.4.png", "images/detail7.5.png", "images/detail7.6.png", "images/detail7.7.png", "images/detail7.8.png"]'>
+      <a href="detail.html"><img alt="Air Jordan 1 Low sneaker" height="240" src="images/prd7.png" width="240"/></a>
+      <div class="product-info">
+       <h2 class="product-name">Air Jordan 1 Low</h2>
+       <p class="just-in">Just In</p>
+       <p class="product-subtitle">Men's Shoes</p>
+       <p class="product-color">1 Colour</p>
+       <p class="product-price">2,591,000₫</p>
+      </div>
+     </article>
+     <article class="product-card" tabindex="0" data-product-id="8" data-product-name="Air Jordan 1 Low" data-product-subtitle="Men's Shoes" data-product-color="1 Colour" data-product-price="2,591,000₫" data-product-images='["images/detail8.1.png", "images/detail8.2.png", "images/detail8.3.png", "images/detail8.4.png", "images/detail8.5.png", "images/detail8.6.png", "images/detail8.7.png", "images/detail8.8.png"]'>
+      <a href="detail.html"><img alt="Air Jordan 1 Low sneaker" height="240" src="images/prd8.png" width="240"/></a>
+      <div class="product-info">
+       <h2 class="product-name">Air Jordan 1 Low</h2>
+       <p class="product-subtitle">Men's Shoes</p>
+       <p class="product-color">1 Colour</p>
+       <p class="product-price">2,591,000₫</p>
+      </div>
+     </article>
+     <article class="product-card" tabindex="0" data-product-id="9" data-product-name="Air Jordan 1 Low" data-product-subtitle="Men's Shoes" data-product-color="1 Colour" data-product-price="3,239,000₫" data-product-images='["images/detail9.1.png", "images/detail9.2.png", "images/detail9.3.png", "images/detail9.4.png", "images/detail9.5.png", "images/detail9.6.png", "images/detail9.7.png", "images/detail9.8.png"]'>
+      <a href="detail.html"><img alt="Air Jordan 1 Low sneaker" height="240" src="images/prd9.png" width="240"/></a>
+      <div class="product-info">
+       <h2 class="product-name">Air Jordan 1 Low</h2>
+       <p class="just-in">Just In</p>
+       <p class="product-subtitle">Men's Shoes</p>
+       <p class="product-color">1 Colour</p>
+       <p class="product-price">3,239,000₫</p>
+      </div>
+     </article>
+    </section>
+   </div>
+  </div>
+      <footer class="main-footer">
+        <div class="footer-links-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Find A Store</a></li>
+                        <li><a href="#">Become A Member</a></li>
+                        <li><a href="#">Running Shoe Finder</a></li>
+                        <li><a href="#">Send Us Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Get Help</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Nike</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Impact</a></li>
+                        <li><a href="#">Report a Concern</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-location">
+                <a href="#"> Vietnam</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2025 Nike, Inc. All rights reserved</p>
+            <a href="#">Terms of Sale</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Nike Privacy Policy</a>
+            <a href="#">Privacy Settings</a>
+        </div>
+    </footer>
+ </body>
+</html>
