@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women</title>
+    <link rel="stylesheet" href="CSS/women.css">
+    <script src="Script/women.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="top-bar">
+                <div class="jordan-logo"><img class="img-jordan-logo" src="images/logojordan.png"></div>
+                <div class="top-links">
+                    <a href="#">Find a Store</a>
+                    <span class="separator">|</span>
+                    <a href="#">Help</a>
+                    <span class="separator">|</span>
+                    <a href="#">Join Us</a>
+                    <span class="separator">|</span>
+                    <a href="#">Sign In</a>
+                </div>
+            </div>
+
+            <div class="main-header">
+                <div class="nike-logo">
+                    <a href="index.html"><img class="img-nike-logo" src="images/logo.png" alt="Nike Logo"></a>
+                </div>
+                
+                <nav class="main-nav">
+                    <a href="#">New & Featured</a>
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">Kids</a>
+                    <a href="#">Sale</a>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="search-container">
+                        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i>
+                        <input type="text" class="search-input" placeholder="Search">
+                    </div>
+                    
+                    <button class="icon-button">
+                        <i class="fa-regular fa-heart fa-lg" style="color: #000000;"></i>
+                    </button>
+                    
+                    <button class="icon-button">
+                        <i class="fa-solid fa-cart-plus fa-lg" style="color: #000000;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="promo-banner">
+                <div class="promo-title">New Styles On Sale: Up To 40% Off</div>
+                <a href="#" class="promo-link">Shop All Our New Markdowns</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <video src="Video/0714.mp4" alt="Nike Banner" class="banner-image" autoplay loop muted><video>
+    </section>
+
+    <div class="bottom-banner">
+        <h1 class="title-banner">STRUCTURE 26</h1>
+        <p class="Content_banner">Supportive cushioning to help keep runners running.</p>
+        <a href="sanpham3.html" class="button-shop-now">Shop</a>
+    </div>
+<section class="featured">
+    <div class="container-featured">
+        <h2 class="section-title">Featured</h2>
+        <div class="double-image-section">
+            <div class="image-card-container">
+                <div class="image-card">
+                    <img src="images/image51.png" alt="Tailored For All-Day Comfort" class="card-image-left">
+                    <div class="card-content">
+                        <p class="card-title">Tailored For All-Day Comfort</p>
+                        <p class="card-subtitle">Nike 24.7</p>
+                        <a href="sanpham3.html" class="button-shop">Shop</a>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="images/image52.png" alt="Look of Football" class="card-image-right">
+                    <div class="card-content">
+                        <p class="card-title">Look of Football</p>
+                        <p class="card-description">Lauren James in the Field General</p> 
+                        <a href="sanpham3.html" class="button-shop">Shop</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="dont-miss">
+    <div class="container-dont-miss">
+        <h2 class="section-title">Don't Miss</h2>
+        <div class="double-image-section">
+            <div class="image-card-container">
+                <div class="image-card">
+                    <img src="images/image53.png" alt="Find Your Perfect Pair" class="card-image-left">
+                    <div class="card-content">
+                        <p class="card-title">Find Your Perfect Pair</p>
+                        <p class="card-description">Nike Running Shoe Finder</p>
+                        <a href="sanpham3.html" class="button-shop">Get Started</a>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="images/image54.png" alt="Cushioned Comfort" class="card-image-right">
+                    <div class="card-content">
+                        <p class="card-description">Cushioned Comfort</p>
+                        <p class="card-title">Vomero 18</p>
+                        <a href="sanpham3.html" class="button-shop">Shop</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <div class="product-slider-section">
+        <div class="slider-header">
+            <h2 class="slider-title">Shop by Collection</h2>
+            <div class="slider-controls">
+                <span class="shop-text">Shop</span>
+                <button class="slider-btn prev-btn" onclick="slideProducts(-1)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                <button class="slider-btn next-btn" onclick="slideProducts(1)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </button>
+            </div>
+        </div> 
+        <div class="slider-container">
+            <div class="product-slider" id="productSlider">
+                <div class="product-card">
+                    <a href="sanpham3.html">
+                        <img src="images/image55.png" alt="Nike Pro" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name">Strength Training Styles</h3>
+                        <p class="product-collection">Nike Pro</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="sanpham3.html">
+                        <img src="images/image56.png" alt="Nike Zenvy" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name">Softness That Lasts</h3>
+                        <p class="product-collection">Nike Zenvy</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="sanpham3.html">
+                        <img src="images/image57.png" alt="Nike Chill" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name">Versatile Essentials</h3>
+                        <p class="product-collection">Nike Chill</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="sanpham3.html">
+                        <img src="images/image58.png" alt="Nike 24.7" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name">Tailored For All-Day Comfort</h3>
+                        <p class="product-collection">Nike 24.7</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="sanpham3.html">
+                        <img src="images/image59.png" alt="Nike Swift" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name">Run Ready</h3>
+                        <p class="product-collection">Nike Swift</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-slider-section">
+        <div class="slider-header">
+            <h2 class="slider-title">Discover Icons</h2>
+            <div class="slider-controls">
+                <span class="shop-text">Shop</span>
+                <button class="slider-btn prev-btn2" onclick="product_Slider(-1)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                <button class="slider-btn next-btn2" onclick="product_Slider(1)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </button>
+            </div>
+        </div> 
+        <div class="slider-container">
+            <div class="product-slider" id="product_Slider">
+                <div class="product-card">
+                    <a href="sanpham.html">
+                        <img src="images/image61.png" alt="Dunk" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name">Dunk</h3>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="sanpham.html">
+                        <img src="images/image62.png" alt="Blazer" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name">Blazer</h3>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="sanpham.html">
+                        <img src="images/image63.png" alt="Air Max" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name">Air Max</h3>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="sanpham.html">
+                        <img src="images/image64.png" alt="Air Jordan" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name">Air Jordan</h3>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="sanpham.html">
+                        <img src="images/image65.png" alt="Air Force 1" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name">Air Force 1</h3>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="sanpham.html">
+                        <img src="images/image66.png" alt="Lifestyle" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name">Lifestyle</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-links-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Find A Store</a></li>
+                        <li><a href="#">Become A Member</a></li>
+                        <li><a href="#">Running Shoe Finder</a></li>
+                        <li><a href="#">Send Us Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Get Help</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Nike</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Impact</a></li>
+                        <li><a href="#">Report a Concern</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-location">
+                <a href="#"> Vietnam</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2025 Nike, Inc. All rights reserved</p>
+            <a href="#">Terms of Sale</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Nike Privacy Policy</a>
+            <a href="#">Privacy Settings</a>
+        </div>
+    </footer>
+</body>
+</html>

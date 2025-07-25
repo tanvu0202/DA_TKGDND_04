@@ -1,0 +1,1394 @@
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
+}
+
+.header-container {
+    height: 220px;
+    background-color: #f5f5f5;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #f5f5f5;
+    padding: 8px 48px;
+    font-size: 12px;
+    color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jordan-logo {
+    font-size: 16px;
+    font-weight: bold;
+}
+.img-jordan-logo{
+    width: 20px;
+    height: 20px;
+}
+
+.top-links {
+    display: flex;
+    gap: 16px;
+}
+
+.top-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.top-links a:hover {
+    color: #666;
+}
+
+.separator {
+    color: #ccc;
+}
+
+/* Main Header */
+.main-header {
+    background-color: white;
+    padding: 16px 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.nike-logo {
+    position: absolute;
+    left: 36px;
+}
+
+.header-actions {
+    position: absolute;
+    right: 48px;
+}
+
+.nike-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111;
+}
+.img-nike-logo{
+    width: 80px;
+    height: 35px;
+}
+
+.nike-swoosh {
+    width: 60px;
+    height: 22px;
+    fill: #111;
+}
+
+.main-nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.main-nav a {
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: #666;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.search-container {
+    position: relative;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 8px 16px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+    fill: #666;
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+
+.search-input::placeholder {
+    color: #666;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: #111;
+}
+
+/* Promo Banner */
+.promo-banner {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.promo-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+}
+
+.promo-link {
+    color: #111;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.promo-link:hover {
+    color: #666;
+}
+
+/* Banner */
+.banner {
+    background: #000;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    /* max-width: auto; */ /* Removed */
+    /* max-height: auto; */ /* Removed */
+}
+.banner-image {
+    width: 100%; /* Made to fill width */
+    height: 100%; /* Made to fill height */
+    object-fit: cover; /* Added for correct image scaling */
+    display: block; /* Important to remove extra space below image */
+}
+.men-title {
+    font-size: 18px; /* Kích thước chữ */
+    font-weight: 600; /* Độ đậm của chữ, 600 tương ứng với SemiBold trong Montserrat */
+    color: #000; /* Màu chữ đen */
+    margin: 0; /* Xóa margin mặc định của thẻ h2 */
+    font-family: 'Montserrat', sans-serif; /* Sử dụng font chữ đã khai báo */
+}
+/*bottom-banner*/
+.bottom-banner {
+    margin-top: 20px;
+    text-align: center;
+}
+.title-banner {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.Content_banner {
+    font-size: 18px;
+    margin-bottom: 32px;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.button-shop-now {
+    background: #000000;
+    color: #ffffff;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.button-shop-now:hover {
+    background: #707072;
+    text-align: center;
+}
+.button-shop-now:active {
+    background: #C9C7C7;
+}
+
+/* Trending1 Section */
+.trending {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.container-trending {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: left;
+    margin-left: 20px; /* Thêm lề trái cho tiêu đề */
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.trending-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    overflow: hidden;
+}
+
+/* Kiểu dáng cho từng thẻ Trending riêng lẻ */
+.trending-card {
+    position: relative; /* Rất quan trọng để định vị các phần tử con (trending-image) */
+    overflow: hidden; /* Đảm bảo hình ảnh bên trong không bị tràn */
+    /* aspect-ratio: 16 / 9; */ /* Có thể loại bỏ hoặc điều chỉnh nếu ảnh có tỷ lệ riêng */
+    /* background-color: #eee; */ /* Xóa nền giữ chỗ này */
+    height: 100%; /* Đảm bảo thẻ có chiều cao để ảnh hiển thị */
+    width: 100%;
+}
+
+/* --- Chỉnh sửa quan trọng ở đây --- */
+.trending-image {
+    width: 100%;
+    height: 100%;
+    position: relative; /* Giữ vị trí tương đối để các phần tử con (title_shop, button-shop) có thể định vị tuyệt đối trong nó */
+    overflow: hidden; /* Đảm bảo ảnh bên trong không tràn ra khỏi div */
+    /* background-size: cover; */ /* Cái này sẽ được thay thế bằng img object-fit */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-color: #eee; */ /* Xóa nền giữ chỗ này */
+}
+
+.trending-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo hình ảnh lấp đầy toàn bộ không gian của .trending-image mà không bị biến dạng */
+    display: block; /* Loại bỏ khoảng trắng dưới ảnh */
+}
+
+/* Kiểu dáng cho phần chứa tiêu đề (Look of Football Total 90) */
+.title_shop {
+    position: absolute; /* Định vị tuyệt đối so với .trending-image */
+    bottom: 80px; /* Điều chỉnh khoảng cách từ đáy ảnh */
+    left: 30px; /* Điều chỉnh khoảng cách từ lề trái ảnh */
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.2;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    z-index: 2; /* Đảm bảo văn bản nằm trên hình ảnh nền */
+    margin: 0; /* Xóa margin mặc định để kiểm soát bằng bottom/left */
+    max-width: 80%; /* Giới hạn chiều rộng để tránh tràn */
+}
+
+.title_shop p {
+    margin: 0; /* Xóa margin mặc định của thẻ p */
+}
+
+/* Kiểu dáng cho nút Shop */
+.button-shop {
+    position: absolute; /* Định vị tuyệt đối so với .trending-image */
+    bottom: 30px; /* Điều chỉnh khoảng cách từ đáy ảnh */
+    left: 30px; /* Điều chỉnh khoảng cách từ lề trái ảnh */
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    z-index: 2; /* Đảm bảo nút nằm trên hình ảnh nền */
+    
+}
+
+.button-shop:hover {
+    background-color: #707072;
+}
+
+.button-shop:active {
+    background-color: #C9C7C7;
+}
+
+
+/* Điều chỉnh màu chữ và text-shadow cho khối thứ 3 (giày xanh neon) nếu nền sáng */
+/* Bạn sẽ cần thêm src cho ảnh của từng .trending-card để nó hiển thị */
+.trending-card:nth-child(3) .title_shop{
+    color: #000;
+    text-shadow: none;
+}
+
+/* Media Queries cho Khả năng phản hồi (Responsiveness) */
+@media (max-width: 768px) {
+    .trending-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .section-title {
+        margin-left: 10px;
+    }
+
+    .title_shop{
+        bottom: 50px;
+        left: 20px;
+        font-size: 1em;
+    }
+
+    .button-shop {
+        bottom: 20px;
+        left: 20px;
+        padding: 6px 15px;
+    }
+}
+/* Trending2 Section */
+.container-trending2 {
+    max-width: 100%; /* Đảm bảo container chiếm toàn bộ chiều rộng của phần cha */
+    padding: 0; /* Xóa padding để các khối có thể tràn ra mép */
+    margin: 0 auto; /* Căn giữa container nếu nó nhỏ hơn 100% trong các ngữ cảnh khác */
+}
+.section-title2 {
+    margin-top: 20px;
+    text-align: left; /* Căn tiêu đề sang trái */
+    margin-left: 20px; /* Thêm lề trái cho tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    font-size: 2em; /* Điều chỉnh kích thước phông chữ */
+    color: #333; /* Màu tối cho tiêu đề */
+}
+
+/* Nike Football Section */
+.nike-football {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Tỷ lệ 16:9 */
+    background-color: #000;
+    overflow: hidden;
+}
+
+#nikeVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button, .play-pause-button, .mute-unmute-button, .volume-up-button, .volume-down-button {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.play-button {
+    left: 10px;
+    display: block; /* Hiển thị nút play ban đầu */
+}
+
+.play-pause-button {
+    left: 50px;
+    display: none; /* Ẩn nút play/pause ban đầu */
+}
+
+.mute-unmute-button {
+    right: 50px;
+}
+
+.volume-up-button {
+    right: 10px;
+}
+
+.volume-down-button {
+    right: 90px;
+}
+/* Featured Products Section */
+.featured-products {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.products-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 60px;
+}
+
+.product-card {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.product-card:hover {
+    opacity: 0.8;
+}
+
+.product-image {
+    width: 100%;
+    height: 320px;
+    background: #f5f5f5;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image.product1 {
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #CD853F 100%);
+}
+
+.product-image.product2 {
+    background: linear-gradient(135deg, #2F4F4F 0%, #708090 50%, #B0C4DE 100%);
+}
+
+.product-image.product3 {
+    background: linear-gradient(135deg, #8FBC8F 0%, #98FB98 50%, #F0FFF0 100%);
+}
+
+.product-image.product4 {
+    background: linear-gradient(135deg, #E6E6FA 0%, #DDA0DD 50%, #DA70D6 100%);
+}
+
+.shoe-in-image {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    transform: rotate(-10deg);
+}
+
+.product-info {
+    padding: 0 8px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #111;
+}
+
+.product-category {
+    color: #757575;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+}
+.trending-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.trending-grid {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 20px;
+}
+
+.trending-card {
+    flex: 0 0 auto;
+    width: 240px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.trending-card:hover {
+    transform: translateY(-5px);
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    font-size: 24px;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.scroll-btn.left {
+    left: 5px;
+}
+
+.scroll-btn.right {
+    right: 5px;
+}
+
+/*---------------------New Arrivals Section-------------------*/
+/* ----- PHẦN GIỮ NGUYÊN ----- */
+.product-slider-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 56px;
+    margin-bottom: 24px;
+}
+
+.slider-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+}
+
+.slider-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.shop-text {
+    font-size: 16px;
+    color: #111;
+    font-weight: 500;
+}
+
+.slider-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e5e5e5;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.slider-btn:hover:not(:disabled) {
+    background-color: #ccc;
+}
+
+.slider-btn:disabled {
+    background-color: #f5f5f5;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.slider-container {
+    overflow: hidden;
+    padding-left: 56px;
+}
+
+.product-slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product-card {
+    flex: 0 0 420px;
+    background: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-2px);
+}
+
+.product-image {
+    width: 420px;
+    height: 420px;
+    background: #f5f5f5;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ----- PHẦN ĐÃ SỬA ----- */
+.trending {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.container-trending {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 56px;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 32px;
+}
+
+.trending-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.trending-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.trending-card:hover {
+    transform: translateY(-4px);
+}
+
+.trending-image {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.trending-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ✅ ĐÃ SỬA: XÓA PHÔNG SAU CHỮ */
+.title_shop {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+/* ✅ ẨN NÚT SHOP */
+.button-shop {
+    display: none;
+}
+.trending-grid {
+    display: flex; /* chuyển từ grid sang flex */
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 8px;
+}
+
+.trending-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.trending-grid::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.trending-grid::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.trending-card {
+    flex: 0 0 280px; /* hoặc 320px hay 420px tùy size ảnh của bạn */
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* căn lề cho cả 2 bên */
+}
+/* ===== PHẦN SLIDER SẢN PHẨM ===== */
+.product-slider-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 56px;
+    margin-bottom: 24px;
+}
+
+.slider-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+}
+
+.shop-text {
+    font-size: 16px;
+    color: #111;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 0;
+}
+
+.slider-controls {
+    display: flex;
+    gap: 12px;
+}
+
+.slider-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e5e5e5;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.slider-btn:hover:not(:disabled) {
+    background-color: #ccc;
+}
+
+.slider-btn:disabled {
+    background-color: #f5f5f5;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+/* ===== PHẦN DANH SÁCH SẢN PHẨM ===== */
+.trending {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.container-trending {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 56px;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 32px;
+}
+
+/* ✅ DÙNG FLEX ĐỂ CUỘN NGANG */
+.trending-grid {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 56px 8px;
+}
+
+.trending-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.trending-grid::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.trending-grid::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.trending-card {
+    flex: 0 0 280px; /* chỉnh kích thước item tại đây */
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.trending-card:hover {
+    transform: translateY(-4px);
+}
+
+.trending-image {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.trending-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ✅ XÓA NỀN CHỮ "SHOP" */
+.title_shop {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+/* ✅ ẨN NÚT SHOP (NẾU CÓ) */
+.button-shop {
+    display: none;
+}
+.slider-container {
+.slider-container {
+    max-width: calc(3 * 420px + 2 * 20px); /* 3 thẻ x 420px + 2 khoảng cách 20px */
+    margin: auto;
+    overflow: hidden;
+    padding-left: 56px;
+}
+
+}
+/* Container bao ngoài slider */
+.slider-container {
+   .slider-container {
+    max-width: calc(3 * 420px + 2 * 20px); /* 3 thẻ x 420px + 2 khoảng cách 20px */
+    margin: auto;
+    overflow: hidden;
+    padding-left: 56px;
+}
+
+}
+
+/* Track chứa các thẻ giày */
+.product-slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Mỗi thẻ giày */
+.product-card {
+    flex: 0 0 420px; /* Cố định mỗi sản phẩm 420px */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.slider-container {
+    max-width: calc(3 * 440px); /* 420px + 20px gap mỗi thẻ */
+    margin: auto;
+    overflow: hidden;
+}
+
+/*---------------------Product Images Backgrounds--------------------*/
+.product-1 { 
+    background: url('images/arv1.png') center/cover no-repeat;
+    background-color: #A4A4A4;
+}
+.product-2 { 
+    background: url('../images/arv2.png') center/cover no-repeat;
+    background-color: #A4A4A4;
+}
+.product-3 { 
+    background: url('../images/arv3.png') center/cover no-repeat;
+    background-color: #A4A4A4;
+}
+.product-4 { 
+    background: url('../images/arv4.png') center/cover no-repeat;
+    background-color: #A4A4A4;
+}
+.product-5 { 
+    background: url('../images/arv5.png') center/cover no-repeat;
+    background-color: #A4A4A4;
+}
+.product-6 { 
+    background: url('../images/arv6.png') center/cover no-repeat;
+    background-color: #A4A4A4;
+}
+.product-7 { 
+    background: url('../images/arv7.png') center/cover no-repeat;
+    background-color: #A4A4A4;
+}
+.product-8 { 
+    background: url('../images/arv8.png') center/cover no-repeat;
+    background-color: #A4A4A4;
+}
+.product-9 { 
+    background: url('../images/arv9.png') center/cover no-repeat;
+    background-color: #A4A4A4;
+}
+.product-10 { 
+    background: url('../images/arv10.png') center/cover no-repeat;
+    background-color: #A4A4A4;
+}
+
+.product-info {
+    padding: 0 12px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.product-category {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: 500;
+    color: #111;
+}
+
+@media (max-width: 1200px) {
+    .slider-header {
+        padding: 0 24px;
+    }
+    
+    .slider-container {
+        padding-left: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-header {
+        padding: 0 16px;
+    }
+    
+    .slider-container {
+        padding-left: 16px;
+    }
+    
+    .product-card {
+        flex: 0 0 300px;
+    }
+    
+    .product-image {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .slider-title {
+        font-size: 20px;
+    }
+
+    .product-image::before {
+        width: 120px;
+        height: 60px;
+        border-radius: 30px;
+    }
+}
+/*------------Shop by sport----------*/
+.slider-wrapper {
+    display: flex;
+    gap: 15px; /* Cách nhau 15px */
+    padding-bottom: 10px;
+}
+.SbS-slider-section{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.slide {
+    min-width: 512px; /* Dài 512px */
+    width: 512px;
+    height: 350px; /* Cao 350px */
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+}
+
+.slide:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.slide-tag {
+    background-color: white;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.slide-tag:hover {
+    background-color: #707072;
+}
+.slide-tag:active {
+    background-color: #C9C7C7;
+}
+
+/* Individual slide backgrounds */
+.slide-1 {
+    background-image: url('../images/image21.png');
+}
+
+.slide-2 {
+    background-image: url('../images/image22.png');
+}
+
+.slide-3 {
+    background-image: url('../images/image23.png');
+}
+
+.slide-4 {
+    background-image: url('../images/image24.png');
+}
+
+.slide-5 {
+    background-image: url('../images/image25.png');
+}
+
+.slide-6 {
+    background-image: url('../images/image26.png');
+
+}
+
+.product-image-3 {
+    width: 420px;
+    height: 420px;
+    background: #f5f5f5;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+}
+/* Footer */
+/* --- Chân trang (Footer) --- */
+.main-footer {
+    padding: 40px 60px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.main-footer hr{
+    border: none; /* Xóa viền mặc định của trình duyệt */
+    height: 1px; /* Độ dày của đường kẻ, càng lớn càng đậm */
+    background-color: #cccccc; /* Màu xám nhạt. Đổi thành #333333 để đậm hơn */
+    margin: 50px 0px;
+}
+
+.footer-links-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 200px;
+}
+
+.footer-column h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    font-size: 12px;
+    color: #757575;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer-column a:hover {
+    color: #111;
+}
+
+.footer-location a {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #757575;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #757575;
+    gap: 30px;
+}
+.footer-bottom a, p{
+    text-decoration: none;
+    color: #757575;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.legal-links a:hover {
+    color: #111;
+}
+.double-image-section {
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.image-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-card {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    max-width: 80%;
+    z-index: 2;
+}
+
+.card-title {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.card-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.card-description {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.button-shop {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.button-shop:hover {
+    background-color: #eee;
+}
+.card-content {
+    position: absolute;
+    bottom: 60px; /* tăng từ 20px lên 60px để đẩy toàn bộ nội dung lên cao */
+    left: 20px;
+    color: white;
+    max-width: 80%;
+    z-index: 2;
+}
+
+.button-shop {
+ .button-shop {
+    display: inline-block;
+    margin-top: 10px; /* giảm khoảng cách với đoạn mô tả */
+    padding: 8px 18px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+}
+.button-shop {
+    display: inline-block;
+    margin-top: 10px; /* giảm khoảng cách với đoạn mô tả */
+    padding: 8px 18px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+.button-shop {
+    display: inline-block;
+    margin-top: 20px; /* Tăng thêm để đẩy xuống */
+    padding: 8px 18px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.button-shop {
+    display: inline-block;
+    margin-top: 45px;  /* Tăng mạnh lên để đẩy xuống xa hơn */
+    padding: 8px 18px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.card-content {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    z-index: 1;
+}
+
+.button-shop {
+    display: inline-block;
+    margin-top: 60px; /* đã tăng mạnh để nút nằm thấp hơn text */
+    padding: 8px 18px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
