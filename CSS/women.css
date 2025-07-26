@@ -1,0 +1,583 @@
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-container {
+    background-color: #f5f5f5;
+}
+
+/* Top Bar */
+.top-bar {
+    padding: 8px 48px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.img-jordan-logo {
+    width: 20px;
+    height: 20px;
+}
+
+.top-links {
+    display: flex;
+    gap: 16px;
+}
+
+.top-links a {
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.top-links a:hover {
+    color: #666;
+}
+
+.separator {
+    color: #ccc;
+}
+
+/* Main Header */
+.main-header {
+    background-color: white;
+    padding: 16px 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.nike-logo {
+    position: absolute;
+    left: 36px;
+}
+
+.img-nike-logo {
+    width: 80px;
+    height: 35px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.main-nav a {
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: #666;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    right: 48px;
+}
+
+.search-container {
+    position: relative;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 8px 16px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+
+.search-input::placeholder {
+    color: #666;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+/* Promo Banner */
+.promo-banner {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.promo-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.promo-link {
+    color: #111;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.promo-link:hover {
+    color: #666;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    height:430px;
+    margin: 0 auto;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Bottom Banner */
+.bottom-banner {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.title-banner {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.Content_banner {
+    font-size: 18px;
+    margin-bottom: 32px;
+    opacity: 0.9;
+}
+
+.button-shop-now {
+    background: #000;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.button-shop-now:hover {
+    background: #707072;
+}
+
+.button-shop-now:active {
+    background: #C9C7C7;
+}
+
+/* Featured & Don't Miss Sections (double-image) */
+.double-image-section {
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.image-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-card {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    z-index: 1;
+}
+
+.card-title {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.card-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.card-description {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.button-shop {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    margin-top: 60px;
+}
+
+.button-shop:hover {
+    background-color: #eee;
+}
+
+/* Shop by Collection & Discover Icons Sliders */
+.product-slider-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 56px;
+    margin-bottom: 24px;
+}
+
+.slider-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.slider-controls {
+    display: flex;
+    gap: 12px;
+}
+
+.shop-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+}
+
+.slider-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e5e5e5;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.slider-btn:hover:not(:disabled) {
+    background-color: #ccc;
+}
+
+.slider-btn:disabled {
+    background-color: #f5f5f5;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.slider-container {
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding-left: 56px;
+}
+
+.product-slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product-card {
+    flex: 0 0 420px;
+    background: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-2px);
+}
+
+.product-image {
+    width: 100%;
+    height: 420px;
+    background: #f5f5f5;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-info {
+    padding: 0 12px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.product-category {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Shop by Sport Section */
+.SbS-slider-section {
+    margin: 40px 0;
+    padding: 0 56px;
+}
+
+.slider-wrapper {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.slide {
+    min-width: 512px;
+    height: 350px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.slide-tag {
+    background-color: white;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.slide-tag:hover {
+    background-color: #707072;
+}
+
+.slide-tag:active {
+    background-color: #C9C7C7;
+}
+
+/* Individual slide backgrounds */
+.slide-1 { background-image: url('../images/image21.png'); }
+.slide-2 { background-image: url('../images/image22.png'); }
+.slide-3 { background-image: url('../images/image23.png'); }
+.slide-4 { background-image: url('../images/image24.png'); }
+.slide-5 { background-image: url('../images/image25.png'); }
+.slide-6 { background-image: url('../images/image26.png'); }
+
+/* Footer */
+.main-footer {
+    padding: 40px 60px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-links-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 200px;
+}
+
+.footer-column h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    font-size: 15px;
+    color: #757575;
+    font-weight: 500;
+}
+
+.footer-column a:hover {
+    color: #111;
+}
+
+.footer-location a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #757575;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #757575;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.footer-bottom a {
+    color: #757575;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer-bottom a:hover {
+    color: #111;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .slider-header {
+        padding: 0 24px;
+    }
+
+    .slider-container, .SbS-slider-section {
+        padding-left: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar, .main-header, .slider-header, .SbS-slider-section {
+        padding: 8px 16px;
+    }
+    
+    .nike-logo {
+        left: 16px;
+    }
+
+    .header-actions {
+        right: 16px;
+    }
+    
+    .product-card {
+        flex: 0 0 300px;
+    }
+    
+    .product-image {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .slider-title {
+        font-size: 20px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

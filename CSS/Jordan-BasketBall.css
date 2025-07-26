@@ -1,0 +1,923 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
+    padding-bottom: 60px;
+}
+
+.header-container {
+    height: 220px;
+    background-color: #f5f5f5;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #f5f5f5;
+    padding: 8px 48px;
+    font-size: 12px;
+    color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jordan-logo {
+    font-size: 16px;
+    font-weight: bold;
+}
+.img-jordan-logo{
+    width: 20px;
+    height: 20px;
+}
+
+.top-links {
+    display: flex;
+    gap: 16px;
+}
+
+.top-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.top-links a:hover {
+    color: #666;
+}
+
+.separator {
+    color: #ccc;
+}
+
+/* Main Header */
+.main-header {
+    background-color: white;
+    padding: 16px 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.nike-logo {
+    position: absolute;
+    left: 48px;
+}
+
+.header-actions {
+    position: absolute;
+    right: 48px;
+}
+
+.nike-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111;
+}
+.img-nike-logo{
+    width: 65px;
+    height: 22px;
+}
+
+.nike-swoosh {
+    width: 60px;
+    height: 22px;
+    fill: #111;
+}
+
+.main-nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.main-nav a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: #666;
+}
+.nav-item {
+    position: relative;
+    list-style: none;
+}
+
+
+.nav-link {
+    color: white;
+    text-decoration:none;
+    display: block;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #ccc;
+}
+
+.dropdown {
+    position: fixed;
+    top: 95px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    padding: 48px;
+    z-index: 2;
+}
+
+.nav-item:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.dropdown-section {
+    color: white;
+    text-align: left;
+    width: 100%;
+}
+
+.section-title-drop {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.dropdown-links {
+    list-style: none;
+}
+
+.dropdown-links li {
+    margin-bottom: 8px;
+}
+
+.dropdown-links a {
+    color: #bababa;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 4px 0;
+}
+
+.dropdown-links a:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.search-container {
+    position: relative;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 8px 16px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+    fill: #666;
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+
+.search-input::placeholder {
+    color: #666;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: #111;
+}
+
+/* Promo Banner */
+.promo-banner {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.promo-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+}
+
+.promo-link {
+    color: #111;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.promo-link:hover {
+    color: #666;
+}
+.banner {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.banner.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    height: 80px;
+}
+
+.banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: relative;
+    height: 100%;
+}
+
+.banner.sticky .banner-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.logo {
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.banner.sticky .logo {
+    margin-bottom: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.jordan-logo-2 {
+    width: 80px;
+    height: 80px;
+    fill: white;
+    transition: all 0.3s ease;
+}
+
+.banner.sticky .jordan-logo-2 {
+    width: 50px;
+    height: 50px;
+}
+
+.jordan-logo-2:hover {
+    transform: scale(1.1);
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all 0.3s ease;
+    height: 100%; /* Navigation chiếm toàn bộ chiều cao */
+}
+
+.banner.sticky .navigation {
+    gap: 15px;
+    margin: 0;
+    justify-content: center;
+    height: 100%;
+}
+
+.sub-nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.sub-nav-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.sub-nav-link:hover::before {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner-content {
+        padding: 0 20px;
+    }
+
+    .banner.sticky {
+        height: 100px;
+        padding: 15px 0;
+    }
+
+    .banner.sticky .banner-content {
+        flex-direction: row;
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+
+    .banner.sticky .logo {
+        position: static;
+        margin-right: 20px;
+    }
+
+    .navigation {
+        gap: 20px;
+    }
+
+    .banner.sticky .navigation {
+        gap: 15px;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 0;
+        justify-content: flex-start;
+    }
+
+    .sub-nav-link {
+        font-size: 14px;
+    }
+
+    .banner.sticky .sub-nav-link {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    .jordan-logo-2 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .banner.sticky .jordan-logo-2 {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner.sticky {
+        height: 80px;
+    }
+
+    .navigation {
+        gap: 15px;
+    }
+
+    .banner.sticky .navigation {
+        gap: 10px;
+    }
+
+    .sub-nav-link {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .banner.sticky .sub-nav-link {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+}
+
+body.banner-sticky {
+    padding-top: 140px;
+}
+
+body.banner-sticky.mobile {
+    padding-top: 115px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 10px;
+    height: 100vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+
+.hero-bg {
+    width: 100%;
+    height: 85%;
+    background: url('../images/Zion1.png') center/cover;
+    align-items: center;
+}
+
+.container2 {
+    width: 100%;
+    min-height: 20vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    position: relative;
+    margin: 0;
+}
+
+.product-info-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.product-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.product-main-title {
+    font-size: 50px;
+    font-weight: 900;
+    color: #000;
+    line-height: 0.9;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cta-button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 140px;
+    text-align: center;
+}
+
+.btn-primary {
+    background: #000;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn-secondary:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Featured Section */
+.featured {
+    padding: 120px 24px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-size: clamp(32px, 5vw, 64px);
+    font-weight: 900;
+    margin-bottom: 16px;
+    color: #111;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #757575;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin-bottom: 120px;
+}
+
+.product-card {
+    background: #f7f7f7;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    height: 300px;
+    background: linear-gradient(45deg, #ff6b35, #f7931e, #ffd700, #32cd32, #1e90ff, #9370db);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 120px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 20px;
+}
+
+.product-info {
+    padding: 32px;
+}
+
+.product-category {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #757575;
+    margin-bottom: 8px;
+}
+
+.product-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #757575;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.product-cta {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.product-cta:hover {
+    background: #333;
+}
+.video-container {
+    position: relative;
+    width: 90%;
+    background-color: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-title{
+    color: black;
+    font-size: 25px;
+    font-weight: 900;
+    margin: 10px 0px;
+}
+
+#myVideo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#muteBtn {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    line-height: 1;
+}
+
+#muteBtn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.container2 p{
+    font-size: 40px;
+    font-weight: 1000;
+    letter-spacing: 0px;
+    line-height: 1.0;
+}
+
+.hero-2-title{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: -60px;
+    color: black;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.hero-bg-2{
+    width: 100%;
+    height: 85%;
+    background: url('../images/Zion1_2.png') center/cover;
+    align-items: center;
+}
+
+.video-container-2 {
+    position: relative;
+    width: 90%;
+    background-color: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#myVideo-2 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#muteBtn-2 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    line-height: 1;
+}
+
+#muteBtn-2:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.hero-bg-3{
+    width: 100%;
+    height: 85%;
+    background: url('../images/hero_bg-3.png') center/cover;
+    align-items: center;
+}
+
+.hero-banner-last {
+    background: url('../images/last_banner_jdsp.png') center/cover no-repeat;
+    width: 100%;
+    height: 85%;
+    align-items: center;
+}
+
+.banner-content-last {
+    max-width: 700px;
+    position: absolute;
+    bottom: 100px;
+    left: 45px;
+}
+
+.banner-content-last p{
+    color: white;
+}
+.hero-banner-last h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-banner-last p {
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+.banner-content-last button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+/* --- Chân trang (Footer) --- */
+.main-footer {
+    padding: 40px 60px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.main-footer hr{
+    border: none; /* Xóa viền mặc định của trình duyệt */
+    height: 1px; /* Độ dày của đường kẻ, càng lớn càng đậm */
+    background-color: #cccccc; /* Màu xám nhạt. Đổi thành #333333 để đậm hơn */
+    margin: 50px 0px;
+}
+
+.footer-links-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 200px;
+}
+
+.footer-column h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    font-size: 12px;
+    color: #757575;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer-column a:hover {
+    color: #111;
+}
+
+.footer-location a {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #757575;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #757575;
+    gap: 30px;
+}
+.footer-bottom a, p{
+    text-decoration: none;
+    color: #757575;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.legal-links a:hover {
+    color: #111;
+}
+
+
+
+
+
+
+
+
