@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nike Membership</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .topbar {
+      background: #f5f5f5;
+      padding: 5px 40px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 14px;
+      position: relative;
+    }
+
+    .topbar a {
+      margin-left: 15px;
+      color: #111;
+      text-decoration: none;
+    }
+
+    .topbar a:not(:last-child)::after {
+      content: "|";
+      margin-left: 15px;
+      color: #fefefe;
+    }
+
+    .logo-jordan-top {
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .logo-jordan-top img {
+      width: 18px;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    .navbar-left,
+    .navbar-right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-nike img {
+      width: 60px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      font-weight: bold;
+      justify-content: center;
+      flex: 0 0 auto;
+    }
+
+    .navbar-right {
+      justify-content: flex-end;
+      gap: 20px;
+    }
+
+    .navbar-right input[type="text"] {
+      padding: 8px 30px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    .icon-links {
+      display: flex;
+      gap: 15px;
+      font-size: 18px;
+    }
+
+    .icon-links a {
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .sticky-inner-wrapper {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      padding: 15px 40px;
+      border-bottom: 1px solid #f0f0f0;
+      z-index: 100;
+    }
+
+    .sticky-inner-wrapper nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .sticky-inner-wrapper h1 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .sticky-inner-wrapper ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .sticky-inner-wrapper a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: url('hero.jpg') no-repeat center center / cover;
+      height: 1200px;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .benefits {
+      display: flex;
+      justify-content: space-between;
+      padding: 60px 40px;
+      gap: 20px;
+      background-color: white;
+      flex-wrap: wrap;
+    }
+
+    .benefit-box {
+      position: relative;
+      width: 32%;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    .benefit-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .benefit-content {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: white;
+      z-index: 2;
+    }
+
+    .benefit-content .membership-label {
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      color: white;
+    }
+
+    .benefit-content .sub-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: white;
+      margin-bottom: 8px;
+    }
+
+    .benefit-content h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .benefit-btn {
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .benefit-btn:hover {
+      background-color: #eee;
+    }
+
+    /* ===== CONNECT ===== */
+    .connect-section {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #f5f5f5;
+    }
+
+    .connect-section h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .connect-apps {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .connect-app {
+      max-width: 200px;
+    }
+
+    .connect-app img {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    /* ===== FAQ ===== */
+    .faq {
+      padding: 40px 20px;
+    }
+
+    .faq h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .faq-item {
+      margin-bottom: 16px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 8px;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: #f5f5f5;
+      padding: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="logo-jordan-top">
+      <a href="#"><img src="jordan.png" alt="Jordan Logo" /></a>
+    </div>
+    <a href="#">Find a Store</a>
+    <a href="#">Help</a>
+    <a href="#">Join Us</a>
+    <a href="#">Sign In</a>
+  </div>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <div class="logo-nike">
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo" /></a>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#">New & Featured</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Kids</a>
+      <a href="#">Sale</a>
+    </div>
+    <div class="navbar-right">
+      <input type="text" placeholder="Search">
+      <div class="icon-links">
+        <a href="#">❤️</a>
+        <a href="00.html">🛒</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY NAV -->
+  <div class="sticky-inner-wrapper">
+    <nav aria-label="secondary">
+      <h1>Nike Membership</h1>
+      <div>
+        <ul>
+          <li><a href="signup.html" aria-label="Sign Up">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+  </section>
+ 
+  <section class="benefits">
+    <div class="benefit-box">
+      <img src="images/nike (1).jpg" alt="Exclusive Access">
+      <div class="benefit-content">
+        <p class="membership-label">Nike Membership</p>
+        <p class="sub-label">Member Product</p>
+        <h3>Your Exclusive Access</h3>
+        <button class="benefit-btn">Shop</button>
+      </div>
+    </div>
+    <div class="benefit-box">
+      <img src="images/next (1).jpg" alt="Customization">
+      <div class="benefit-content">
+        <p class="membership-label">Nike Membership</p>
+        <p class="sub-label">Nike By You</p>
+        <h3>Your Customisation Service</h3>
+        <button class="benefit-btn">Customise</button>
+      </div>
+    </div>
+    <div class="benefit-box">
+      <img src="images/end (1).jpg" alt="Rewards">
+      <div class="benefit-content">
+        <p class="membership-label">Nike Membership</p>
+        <p class="sub-label">Member Rewards</p>
+        <h3>How We Say Thank You</h3>
+        <button class="benefit-btn">Celebrate</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECT -->
+  <section class="connect-section">
+    <h2>Connect Through Membership</h2>
+    <div class="connect-apps">
+      <div class="connect-app">
+        <img src="images/nike-icon.jpg" alt="Nike App">
+        <p><strong>Nike App</strong><br>Personalized experience.</p>
+      </div>
+      <div class="connect-app">
+        <img src="images/Nike-Training-Club.jpg" alt="Run Club">
+        <p><strong>Nike Run Club</strong><br>Run with NRC.</p>
+      </div>
+      <div class="connect-app">
+        <img src="images/NRC.jpg" alt="Training Club">
+        <p><strong>Nike Training Club</strong><br>Train effectively.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <p><strong>What is Nike Membership?</strong></p>
+      <p>Nike Membership gives you access to exclusive products, events, and rewards.</p>
+    </div>
+    <div class="faq-item">
+      <p><strong>Am I a member?</strong></p>
+      <p>If you have an account with Nike, you are a member!</p>
+    </div>
+    <div class="faq-item">
+      <p><strong>Is it free to join?</strong></p>
+      <p>Yes, joining Nike Membership is completely free!</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    © 2025 Nike, Inc. All Rights Reserved.
+  </div>
+
+</body>
+</html>

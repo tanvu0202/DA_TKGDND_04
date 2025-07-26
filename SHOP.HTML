@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nike New Arrivals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    /* Topbar */
+    .topbar {
+      background: #f5f5f5;
+      padding: 5px 40px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 14px;
+      position: relative;
+    }
+
+    .topbar a {
+      margin-left: 15px;
+    }
+
+    .topbar a:not(:last-child)::after {
+      content: "|";
+      margin-left: 15px;
+      color: #ccc;
+    }
+
+    .logo-jordan-top {
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .logo-jordan-top img {
+      width: 18px;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    .navbar-left,
+    .navbar-right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-nike img {
+      width: 60px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      font-weight: bold;
+      justify-content: center;
+      flex: 0 0 auto;
+    }
+
+    .navbar-right {
+      justify-content: flex-end;
+      gap: 20px;
+    }
+
+    .navbar-right input[type="text"] {
+      padding: 8px 30px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .icon-links {
+      display: flex;
+      gap: 15px;
+      font-size: 20px;
+    }
+
+    /* Error Message */
+    .error-message {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .error-message h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .error-message p {
+      color: #777;
+      font-size: 16px;
+    }
+
+    /* New Arrivals Section */
+    .new-arrivals {
+      padding: 20px 40px 60px;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .section-header h3 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .arrows button {
+      border: none;
+      background: #eee;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      font-size: 18px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    .products {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: start;
+    }
+
+    .product-card {
+      width: 200px;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+      background-color: #f3f3f3;
+    }
+
+    .product-card h4 {
+      font-weight: bold;
+      margin: 10px 0 4px;
+    }
+
+    .product-card p {
+      color: #777;
+      margin: 0 0 4px;
+    }
+
+    .product-card span {
+      font-weight: bold;
+    }
+
+    /* Footer */
+    .footer {
+      background: #f5f5f5;
+      padding: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="logo-jordan-top">
+      <a href="#"><img src="jordan.png" alt="Jordan Logo" /></a>
+    </div>
+    <a href="#">Find a Store</a>
+    <a href="#">Help</a>
+    <a href="#">Join Us</a>
+    <a href="#">Sign In</a>
+  </div>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <div class="logo-nike">
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo" /></a>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#">New & Featured</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Kids</a>
+      <a href="#">Sale</a>
+    </div>
+    <div class="navbar-right">
+      <input type="text" placeholder="Search">
+      <div class="icon-links">
+        <a href="#">❤️</a>
+        <a href="#">🛒</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ERROR MESSAGE -->
+  <section class="error-message">
+    <h2>We can't find the page you are looking for.</h2>
+    <p>Sorry for the inconvenience.</p>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="new-arrivals">
+    <div class="section-header">
+      <h3>New Arrivals</h3>
+      <div class="arrows">
+        <button>&lt;</button>
+        <button>&gt;</button>
+      </div>
+    </div>
+    <div class="products">
+      <div class="product-card">
+        <img src="images/dunk.jpg" alt="Nike Dunk Low">
+        <h4>Nike Dunk Low</h4>
+        <p>Women's Shoes</p>
+        <span>3.239.000₫</span>
+      </div>
+      <div class="product-card">
+        <img src="images/dunk2.jpg" alt="Nike Dunk Low SE">
+        <h4>Nike Dunk Low SE</h4>
+        <p>Women's Shoes</p>
+        <span>3.239.000₫</span>
+      </div>
+      <div class="product-card">
+        <img src="images/dunk3.jpg" alt="Air Jordan 1">
+        <h4>Air Jordan 1</h4>
+        <p>Low Men's Shoes</p>
+        <span>3.239.000₫</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    © 2025 Nike, Inc. All Rights Reserved.
+  </div>
+
+</body>
+</html>
